@@ -1,0 +1,67 @@
+body {
+    font-family: "raleway", sans-serif;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+nav div{
+    display: flex;
+    list-style: none;
+    color: inherit;
+}
+
+nav a{
+    display: flex;
+    text-decoration: none;
+    border-bottom: transparent;
+}
+
+nav a:hover{
+    border-top-color: var(#0065fc);
+}
+
+a{
+    padding: 20px;
+}
+
+.accommodation {
+    color: #0065fc;
+    padding: 20px;
+}
+
+nav img {
+    height: 40px;
+    margin-right: auto;
+    padding: 0 30px;
+}
+
+@media(max-width:600px) {
+    .sub-nav{
+        order: 1;
+        flex-basis: 100%;
+    }
+}
+
+.sub-nav {
+    display: flex;
+}
+
+.sub-nav a {
+    flex-basis: 50%;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+}
+
+.sub-nav a:hover{
+    border-bottom-color: #0065fc;
+    border-top: transparent;
+    color: #0065fc;
+}
+
