@@ -67,6 +67,7 @@ nav img {
 
 .main{
     padding: 0 30px;
+    font-size: 12px;
 }
 
 .contents{
@@ -97,4 +98,10 @@ nav img {
     font-size: 15px;
     border: none;
     cursor:pointer;
-}                      
+    opacity: 0.8;
+} 
+
+.contents button:hover {
+    transform:scale(1.02);
+    opacity: 1.2;
+}
