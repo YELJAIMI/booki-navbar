@@ -65,3 +65,36 @@ nav img {
     color: #0065fc;
 }
 
+.main{
+    padding: 0 30px;
+}
+
+.contents{
+    display:flex;
+}
+
+.contents i{
+    padding: 12px;
+    background-color: lightgrey;
+    border-radius:6px 0 0 6px;
+}
+
+.contents input{
+    border: 1px solid lightgray;
+}
+
+.contents ::placeholder{
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.contents button{
+    background-color: #0065fc;
+    color: white;
+    border-radius: 0 6px 6px 0px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    cursor:pointer;
+}                      
