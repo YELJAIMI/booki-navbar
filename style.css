@@ -1,6 +1,14 @@
+:root{
+    --blue: #0065fc;
+    --lightgrey: #f2f2f2;
+    --lightblue: #deebff;
+    --lightsteelblue: #f3f8ff;
+    --darkgray: #d9d9d9;
+
+}
+
 body {
     font-family: "raleway", sans-serif;
-    margin: 0px;
 }
 
 nav {
@@ -42,7 +50,7 @@ nav img {
     padding: 0 30px;
 }
 
-@media(max-width:600px) {
+@media(max-width: 800px) {
     .sub-nav{
         order: 1;
         flex-basis: 100%;
@@ -70,8 +78,9 @@ nav img {
     font-size: 12px;
 }
 
-.contents{
+.contents {
     display:flex;
+    margin-bottom: 15px;
 }
 
 .contents i{
@@ -104,4 +113,188 @@ nav img {
 .contents button:hover {
     transform:scale(1.02);
     opacity: 1.2;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter{
+    border: 2px solid lightgrey;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    transition: 100ms;
+}
+
+.filter:hover{
+    background-color: #f3f8ff;
+    transform: scale(1.02);
+}
+
+.filter .fas{
+    color: #0065fc;
+    background-color: lightblue;
+    border-radius: 50%;
+    margin: -2px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter span{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.infos{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.infos .fas{
+    color: var(--blue);
+    width: 16px;
+    height: 16px;
+    border: 2px solid darkgrey;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hébergements{
+    display: flex;
+    gap: 1rem;
+}
+
+.Hébergements > div{
+    background-color: lightgrey;
+    padding: 1rem;
+    border-radius: 1.2rem;
+}
+
+.Hébergements .city{
+    flex-basis: 70%;
+}
+
+.city a{
+    color: black;
+    font-weight: bold;
+}
+
+@media(max-width: 800px){
+    .Hébergements{
+        flex-direction: column;
+    }
+    .popular{
+        order: -1;
+    }
+}
+
+.Hébergements .popular{
+    flex-basis: 30%;
+}
+
+.Hébergements-city {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.Hébergements-city div{
+    flex-basis: 30%;
+
+}
+
+.Hébergements .popular-aub{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media(max-width: 800px){
+    .Hébergements .popular-aub{
+        flex-direction: row;
+    }
+}
+
+.auberges{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    box-shadow: 0 0 16px #0000002e;
+    flex-grow: 1;
+}
+
+.auberges img{
+    border-radius: 1rem 1rem 0 0;
+    height: 8rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.auberges p, h3{
+    margin: 0.2rem;
+}
+
+.blue{
+    color: var(--blue);
+}
+
+.grey{
+    color: var(--darkgray);
+}
+
+/* popular-aub */
+
+.popular-aub{
+    min-width: 15rem;
+    object-fit: cover;
+
+}
+.auberges-populaires{
+    display: flex; 
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    box-shadow: 0 0 16px #0000002e;
+    flex-grow: 1;
+}
+
+.auberges-populaires img {
+    height: auto;
+    border-radius: 1rem 0 0 1rem;
+    width: 40%;
+    margin-right: 0.5rem;
+    min-width: 5rem;
+}
+
+.Descriptif-pop{
+    flex: basis 100%;
+    display: flex; 
+    flex-direction: column;
+}
+
+.auberges-populaires .stars{
+    margin-top: 1.5rem;
+}
+
+.popular h3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular h3, .city h3{
+    margin-top: 0.1rem;
 }
