@@ -241,7 +241,7 @@ nav img {
     height: 8rem;
     width: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: 0rem;
 }
 
 .auberges p, h3{
@@ -258,16 +258,23 @@ nav img {
 
 /* popular-aub */
 
+.popular{
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding-top: 10px;
+}
 .popular-aub{
-    min-width: 15rem;
+    min-width: 16rem;
+    flex-basis: 100%;
     object-fit: cover;
+    gap: 1rem;
 
 }
 .auberges-populaires{
     display: flex; 
     background-color: white;
     border-radius: 1rem;
-    padding: 0.2rem;
+    padding: 0rem;
     box-shadow: 0 0 16px #0000002e;
     flex-grow: 1;
 }
@@ -275,14 +282,13 @@ nav img {
 .auberges-populaires img {
     height: auto;
     border-radius: 1rem 0 0 1rem;
-    width: 40%;
+    width: 25%;
     margin-right: 0.5rem;
-    min-width: 5rem;
 }
 
 .Descriptif-pop{
-    flex: basis 100%;
-    display: flex; 
+    display: flex;
+    flex-basis: 100%;
     flex-direction: column;
 }
 
@@ -293,6 +299,8 @@ nav img {
 .popular h3{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 15px;
 }
 
 .popular h3, .city h3{
