@@ -107,7 +107,7 @@ nav img {
 
 .contents button:hover {
     transform:scale(1.02);
-    opacity: 1.2;
+    opacity: 1;
 }
 
 .list{
@@ -397,7 +397,7 @@ nav img {
     .list{
         display: grid;
     }
-    
+
     .Hébergements{
         flex-direction: column;
     }
