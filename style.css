@@ -33,7 +33,7 @@ nav a{
 }
 
 nav a:hover{
-    border-top-color: var(#0065fc);
+    border-top-color: #0065fc;
 }
 
 a{
@@ -50,13 +50,6 @@ nav img {
     height: 40px;
     margin-right: auto;
     padding: 0 30px;
-}
-
-@media(max-width: 600px) {
-    .sub-nav{
-        order: 1;
-        flex-basis: 100%;
-    }
 }
 
 .sub-nav {
@@ -396,6 +389,15 @@ nav img {
 }
 
 @media(max-width: 600px){
+    .sub-nav{
+        order: 1;
+        flex-basis: 100%;
+    }
+    
+    .list{
+        display: grid;
+    }
+    
     .Hébergements{
         flex-direction: column;
     }
@@ -433,7 +435,7 @@ nav img {
 
  @media(max-width: 640px){
      .Activités-list > *{
-         grid-column: repeat 1fr;
+         grid-column: 1fr;
          grid-row: auto 10rem 10rem 10rem 10rem 10rem ;
     }
     .Activités-list{
