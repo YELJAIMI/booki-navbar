@@ -409,6 +409,10 @@ nav img {
         grid-template-rows: auto 10rem 10rem 10rem;   
     }
 
+    .large-port{
+        height: 12rem;
+    }
+
     footer {
         display: flex;
         flex-direction: column;
