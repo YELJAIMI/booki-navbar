@@ -7,9 +7,19 @@
 
 }
 
+html{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
 body {
+    width: 100%;
     font-family: "raleway", sans-serif;
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
 }
 
 nav {
@@ -387,7 +397,71 @@ nav img {
     box-shadow: 0 0 20px #0000002e;
 }
 
-@media(max-width: 600px){
+@media(max-width: 900px){
+    .auberges-populaires img{
+        border-radius: 1rem 0 0 1rem;
+        max-width: 26rem;
+        width: 7rem;
+        margin-right: 0.5rem;
+        height: auto;
+        object-fit: cover;
+    }
+    .Activités-list > *{
+        display: flex;
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .Activités-list{
+        flex-direction: column;
+    }
+    .Hébergements{
+        flex-direction: column-reverse;
+    }
+    html{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0px;
+        display: flex;
+    }
+    body{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer{
+        width: auto;
+    }
+}
+
+@media(max-width: 640px){
+    html{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0px;
+        display: flex;
+    }
+    body{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    
+    .Activités-list > *{
+        grid-column: 1fr;
+        grid-row: auto 10rem 10rem 10rem 10rem 10rem ;
+    }
+    .Activités-list{
+        grid-template-columns: none;
+        grid-template-rows: auto 10rem 10rem 10rem 10rem 10rem;
+    }
     .sub-nav{
         order: 1;
         flex-basis: 100%;
@@ -395,6 +469,22 @@ nav img {
     
     .list{
         display: grid;
+        width: 100%;
+    }
+
+    .list > *{
+        display: grid;
+        width: 107%;
+        margin: 0px;
+    }
+
+    .list Romantique{
+        margin-right: 4em;
+    }
+
+    .title-filter{
+        display: inline;
+        width:  -webkit-fill-available;
     }
 
     .Hébergements{
@@ -405,41 +495,13 @@ nav img {
     }
 
     .Hébergements-city{
-        display: grid;
+        display: unset;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto 10rem 10rem 10rem;   
     }
 
     .large-port{
         height: 12rem;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
-    }
-}
-
-@media(max-width: 900px){
-    .Activités-list > *{
-        display: flex;
-        grid-column: span 2;
-        grid-row: span 1;
-    }
-    .Activités-list{
-        flex-direction: column;
-    }
-}
-
- @media(max-width: 640px){
-     .Activités-list > *{
-         grid-column: 1fr;
-         grid-row: auto 10rem 10rem 10rem 10rem 10rem ;
-    }
-    .Activités-list{
-        grid-template-columns: none;
-        grid-template-rows: auto 10rem 10rem 10rem 10rem 10rem;
     }
 }
 
