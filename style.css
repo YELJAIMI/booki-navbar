@@ -473,7 +473,7 @@ nav img {
     }
 
     .list > *{
-        display: grid;
+        display: flex;
         width: 107%;
         margin: 0px;
     }
