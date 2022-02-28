@@ -4,7 +4,6 @@
     --lightblue: #deebff;
     --lightsteelblue: #f3f8ff;
     --darkgray: #d9d9d9;
-
 }
 
 html{
@@ -15,7 +14,7 @@ html{
 }
 
 body {
-    width: 100%;
+     width: 100%;
     font-family: "raleway", sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -326,6 +325,7 @@ nav img {
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
     cursor: pointer;
+
 }
 
 .Activités-list > * {
@@ -398,14 +398,15 @@ nav img {
 }
 
 @media(max-width: 900px){
-    .auberges-populaires img{
+    .auberges-populaires img {
         border-radius: 1rem 0 0 1rem;
-        max-width: 26rem;
-        width: 7rem;
+        max-width: 26em;
+        width: 7em;
         margin-right: 0.5rem;
         height: auto;
         object-fit: cover;
     }
+
     .Activités-list > *{
         display: flex;
         grid-column: span 2;
@@ -415,52 +416,52 @@ nav img {
         flex-direction: column;
     }
     .Hébergements{
-        flex-direction: column-reverse;
+    flex-direction: column-reverse;
     }
+
     html{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin: 0px;
-        display: flex;
-    }
+     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px;
+    display: flex;
+}
     body{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+     width: 100%;
+      margin-left: auto;
+    margin-right: auto;
+
     }
     footer{
-        width: auto;
+    width:auto;
     }
 }
 
 @media(max-width: 640px){
     html{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin: 0px;
-        display: flex;
+     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px;
+    display: flex;
     }
-
     body{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+     width: 100%;
+      margin-left: auto;
+    margin-right: auto;
 
-    footer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
     }
-    
-    .Activités-list > *{
-        grid-column: 1fr;
-        grid-row: auto 10rem 10rem 10rem 10rem 10rem ;
-    }
+    footer{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
 
+     .Activités-list > *{
+         grid-column: 1fr;
+         grid-row: auto 10rem 10rem 10rem 10rem 10rem ;
+    }
     .Activités-list{
         grid-template-columns: none;
         grid-template-rows: auto 10rem 10rem 10rem 10rem 10rem;
@@ -471,28 +472,28 @@ nav img {
         flex-basis: 100%;
     }
     
-    
-    .list{
-        width: 100%;
-    }
-    
-    .list{
-        width: 107%;
-        margin: 0px;
+    .list {
+        width:100%;
     }
 
+    .list{
+        width:107%;
+        margin: 0px;
+    }
+    
     .list div:nth-child(4){
         margin-right: 4em;
     }
 
     .title-filter{
         display: inline;
-        width:  -webkit-fill-available;
+        width: -webkit-fill-available;
     }
 
     .Hébergements{
         flex-direction: column;
     }
+
     .popular{
         order: -1;
     }
