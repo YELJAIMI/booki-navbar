@@ -115,6 +115,10 @@ nav img {
     opacity: 0.8;
 } 
 
+.contents .fas.fa-search{
+    display: none;
+}
+
 .contents button:hover {
     transform:scale(1.02);
     opacity: 1;
@@ -414,6 +418,11 @@ nav img {
     .Activités-list{
         flex-direction: column;
     }
+
+    .contents .fas.fa-search{
+        display: none;
+    }
+
     .Hébergements{
         flex-direction: column-reverse;
     }
@@ -457,8 +466,8 @@ nav img {
     }
     
     .Activités-list > *{
-        grid-column: 1fr;
-        grid-row: auto 10rem 10rem 10rem 10rem 10rem ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 10rem 10rem 10rem 10rem 10rem;
     }
 
     .Activités-list{
@@ -469,6 +478,21 @@ nav img {
     .sub-nav{
         order: 1;
         flex-basis: 100%;
+    }
+
+    button{
+        display: none; 
+    }
+
+    .contents{
+        justify-content: center;
+    }
+
+    .contents .fas.fa-search{
+        display: block;
+        color: white;
+        background-color: #0065fc;
+        border-radius: 0 0.5rem 0.5rem 0;
     }
     
     
@@ -510,7 +534,7 @@ nav img {
 
 footer{
     background-color: lightgrey;
-    width: 100%;
+    width: auto;
     display: flex;
     margin-top: 2rem;
     justify-content: space-evenly;
